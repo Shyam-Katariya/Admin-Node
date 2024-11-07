@@ -1,0 +1,246 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+    --primary: #257180 !important; /* Primary Color */
+    --highlight: #fd8b51 !important; /* Highlight Color */
+}
+
+/* General Styles */
+body {
+    background-color: #fdf7e5 !important; /* Accent Background */
+    height: 100vh !important;
+    margin: 0 !important;
+    font-weight: 500 !important;
+    font-family: 'Roboto Slab', serif !important; /* Font Family */
+    letter-spacing: 0.7px !important;
+}
+
+/* Navbar Styles */
+.navbar {
+    border-bottom: 2px solid #cb6040; /* Subtle border under navbar */
+}
+
+/* Form Container */
+.form-container {
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    max-width: 400px !important;
+    width: 100% !important;
+    padding: 40px 50px !important;
+    text-align: center !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.register-form-container {
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    max-width: 1000px !important;
+    width: 100% !important;
+    padding: 4% !important;
+    text-align: center !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Form Inputs */
+.form-control {
+    border-radius: 10px !important;
+    border: 1px solid #ddd !important;
+    margin-bottom: 20px !important;
+    transition: border-color 0.3s !important;
+}
+
+.form-control:focus {
+    border: 2px solid var(--primary) !important; /* Primary Color */
+    box-shadow: none !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary) !important; /* Primary Button Color */
+    color: #ffffff !important;
+    padding: 6px 12px !important;
+    border-color: var(--primary) !important;
+    transition: background-color 0.3s !important;
+    font-weight: 500 !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--highlight) !important; /* Highlight Color */
+    border-color: var(--highlight) !important;
+}
+
+/* Styles for navigation links */
+.nav-link {
+    color: #257180 !important;
+    padding: 10px 15px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition:
+        background-color 0.3s,
+        color 0.3s; /* Smooth transitions */
+}
+
+.nav-link:hover {
+    background-color: rgba(37, 113, 128, 0.1); /* Light hover effect */
+    color: #257180; /* Change text color on hover */
+}
+
+/* Active state styles */
+.nav-pills .nav-link.active {
+    background-color: #257180 !important; /* Active background color */
+    color: #fffcfc !important; /* Active text color */
+}
+
+/* Optional: Styles for focused state to improve accessibility */
+.nav-link:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 2px rgba(37, 113, 128, 0.5); /* Custom focus outline */
+}
+
+/* Ensure that the active state reflects the active link */
+.nav-pills .nav-link:active,
+.nav-pills .nav-link.active {
+    background-color: #257180 !important; /* Same active background */
+    color: #ffffff !important; /* Same active text color */
+}
+
+.btn-success {
+    background-color: rgb(0, 153, 0);
+    color: #f8f8f8 !important;
+}
+
+.badge {
+    font-size: 14px !important;
+}
+
+.btn-danger {
+    background-color: rgb(168, 0, 0);
+    color: #f8f8f8 !important;
+}
+
+/* Text Primary */
+.text-theme-primary {
+    color: var(--primary) !important;
+}
+
+/* Links */
+.link {
+    color: var(--primary) !important;
+    text-decoration: none !important;
+}
+
+.link:hover {
+    color: var(--highlight) !important; /* Change on hover */
+}
+
+/* Divider */
+.divider {
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: 20px 0 !important;
+}
+
+.divider::before,
+.divider::after {
+    content: '' !important;
+    flex: 1 !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+.divider::before {
+    margin-right: 0.25em !important;
+}
+
+.divider::after {
+    margin-left: 0.25em !important;
+}
+
+/* Card Styles */
+.card {
+    transition: transform 0.2s;
+    height: 100% !important;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .form-container {
+        padding: 30px 35px !important;
+        font-size: 14px !important;
+    }
+
+    .register-form-container {
+        padding: 9% !important;
+        font-size: 14px !important;
+    }
+
+    .btn-primary {
+        padding: 8px 16px !important;
+        font-size: 14px !important;
+    }
+}
+
+.receipt {
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    width: 100% !important;
+    padding: 20px !important;
+    margin: 20px auto; /* Centered with margin on top and bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+.receipt-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.receipt-header h1 {
+    color: var(--primary);
+}
+.receipt-header p {
+    margin: 0;
+    font-size: 14px;
+}
+.list-group-item {
+    padding: 12px 25px !important; /* Added padding for a more spacious feel */
+}
+@media (max-width: 576px) {
+    .receipt-header h1 {
+        font-size: 20px; /* Smaller font size for smaller screens */
+    }
+}
+
+.img-file {
+    margin-top: 10px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.upload-container {
+    background-color: #fff;
+    border: 2px dotted var(--primary) !important;
+    width: 95%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.upload-container .upload-icon {
+    font-size: 50px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.select-button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 180px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}

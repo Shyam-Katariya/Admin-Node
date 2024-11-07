@@ -1,0 +1,10 @@
+/* Styles for navigation links */
+/* Links */
+.link {
+    color: #fd8b51 !important;
+    text-decoration: none !important;
+}
+
+.link:hover {
+    color: #257180 !important; /* Change on hover */
+}

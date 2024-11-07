@@ -1,0 +1,37 @@
+{
+    "name": "secureapp",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "init": "node script/init.js",
+        "start": "nodemon index.js"
+    },
+    "dependencies": {
+        "@handlebars/allow-prototype-access": "^1.0.5",
+        "axios": "^1.7.7",
+        "connect-flash": "^0.1.1",
+        "cookie-parser": "^1.4.7",
+        "crypto-js": "^4.2.0",
+        "debug": "~2.6.9",
+        "dotenv": "^16.4.5",
+        "express": "~4.16.1",
+        "express-handlebars": "^8.0.1",
+        "express-session": "^1.18.1",
+        "handlebars": "^4.7.8",
+        "handlebars-helpers": "^0.10.0",
+        "hbs": "~4.0.4",
+        "moment": "^2.30.1",
+        "mongoose": "^8.7.3",
+        "multer": "^1.4.5-lts.1",
+        "passport": "^0.7.0",
+        "passport-local": "^1.0.0",
+        "toastr": "^2.1.4",
+        "validator": "^13.12.0",
+        "winston": "^3.15.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.7",
+        "prettier": "^3.3.3"
+    }
+}

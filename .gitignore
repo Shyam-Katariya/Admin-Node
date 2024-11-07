@@ -1,0 +1,170 @@
+# Compiled source
+#################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+##########
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Logs and crash reports
+########################
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.vscode/*
+.idea/
+*.log
+
+# OS Generated
+##############
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*.swo
+*.swn
+.code
+
+# Dependency directories
+########################
+node_modules/
+jspm_packages/
+
+# # dotenv environment variable files
+# ###################################
+# .env
+# .env.*.local
+# .env.local
+
+# lockfiles
+###########
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+composer.lock
+
+# Test output
+#############
+coverage/
+*.lcov
+.nyc_output/
+
+# Temporary files
+#################
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.lock
+
+# Parcel cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js output
+################
+.next
+out
+
+# Nuxt.js output
+################
+.nuxt
+dist
+
+# Gatsby output
+###############
+.cache/
+# public # Uncomment if using Gatsby and not Next.js
+
+# VuePress output
+#################
+.vuepress/dist
+.temp
+.cache
+
+# Svelte build artifacts
+########################
+.svelte-kit
+.svelte
+
+# Firebase output
+#################
+.firebase/
+firestore.rules.bak
+
+# Storybook files
+#################
+.storybook/
+dist-storybook/
+
+# Git hooks
+###########
+.husky/
+
+# Electron build artifacts
+##########################
+electron/dist
+dist_electron
+
+# Docker files
+##############
+*.container
+Dockerfile
+
+# Terraform files
+#################
+*.tfstate
+*.tfstate.backup
+.terraform/
+terraform.tfvars
+
+# Python files
+##############
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Rust files
+############
+target/
+
+# Go files
+##########
+bin/
+
+# Other IDEs and Editors
+########################
+*.sublime-project
+*.sublime-workspace
+.vscode/
+.idea/
+*.iml
+
+# Specific tool and framework caches
+####################################
+.pnpm/
+.npm/
+.eslintcache
+.stylelintcache
+.sass-cache/
+phpunit.xml
+tmp/
+.idea/
+.vscode/

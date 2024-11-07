@@ -1,0 +1,20 @@
+<div class="container-fluid bg-white d-flex flex-column pt-5 align-items-center min-vh-100">
+    <div class="container shadow-lg p-5">
+        <h2 class="mb-4 text-center text-theme-primary">Update User Detail</h2>
+        <form>
+            <div class="mb-3 text-start">
+                <label for="name" class="form-label">Name :</label>
+                <input type="text" class="form-control" value="{{user.name}}" id="updateName" name="updateName" placeholder="Enter your name" required
+                    autofocus>
+            </div>
+            <div class="mb-3 text-start">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="updateEmail" value="{{user.email}}" name="updateEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="d-flex justify-content-end gap-3 mt-4">
+                <a type="button" href='/user/dashboard' class="btn btn-secondary">Cancel</a>
+                <button type="button" id="updateUserDetail" data-id="{{user._id}}" class="btn btn-primary">Update</button>
+            </div>
+        </form>
+    </div>
+</div>

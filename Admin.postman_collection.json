@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "ca2cfc28-afb9-4eb9-b894-080e54cce75a",
+		"name": "Admin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38429884"
+	},
+	"item": [
+		{
+			"name": "Add Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Shyam",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "shyam@demo.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "shyam",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,45 @@
+<div class="container-fluid d-flex flex-column justify-content-center bg-white align-items-center min-vh-100 w-100">
+    <div class="container shadow-lg mx-5 p-5 rounded">
+        <h2 class="mb-4 text-center">Add Admin User</h2>
+        <form>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="profile" class="form-label">File</label>
+                    <div class="upload-container my-2 p-4">
+                        <div class="upload-box">
+                            <img class="m-3" id="preview" src="" alt="" style="max-width: 40%; display: none;" />
+                            <input type="file" id="profile" accept=".png,.jpg,.jpeg,.pdf" style="display: none;"
+                                onchange="previewImage(event)">
+                            <label for="profile" class="btn btn-primary w-100 bi bi-cloud-arrow-up-fill me-2"><span class="mx-1">Upload File</span></label>
+                        </div>
+                    </div>
+                </div>
+                <dic class="col-12 col-md-6 col-lg-6 h-100">
+                    <div class="mb-3 text-start">
+                        <label for="fullname" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullname" placeholder="Enter your full name"
+                            required>
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter a password"
+                            required>
+                    </div>
+                </dic>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-end gap-3">
+                    <button type="button" id="adminRegister" name="adminRegister" class="btn btn-primary">Add
+                        Admin</button>
+                    <a href="/admin/dashboard" class="btn btn-secondary">Go Back</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{{loadScript 'addUser'}}

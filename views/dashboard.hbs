@@ -1,0 +1,52 @@
+<div
+    class='container-fluid d-flex flex-column pt-3 align-items-center h-100 bg-light'
+>
+    <div class='container'>
+        <div class='receipt'>
+            <div class='receipt-header'>
+                <h1>User Details</h1>
+            </div>
+            <ul class='list-group'>
+                <li class='list-group-item'>
+                    <strong class='text-theme-primary'>User ID :</strong>
+                    <span>{{user._id}}</span>
+                </li>
+                <li class='list-group-item'>
+                    <strong class='text-theme-primary'>Name :</strong>
+                    <span>{{user.name}}</span>
+                </li>
+                <li class='list-group-item'>
+                    <strong class='text-theme-primary'>Email :</strong>
+                    <span>{{user.email}}</span>
+                </li>
+                <li class='list-group-item'>
+                    <strong class='text-theme-primary'>Date Joined :</strong>
+                    <span>{{timeFormat user.createdAt}}</span>
+                </li>
+                <li class='list-group-item'>
+                    <strong class='text-theme-primary'>Role :</strong>
+                    <span>{{user.role}}</span>
+                </li>
+                <li class='list-group-item'>
+                    <strong class='text-theme-primary'>Country :</strong>
+                    <span>{{user.country}}</span>
+                </li>
+                <li class='list-group-item'>
+                    <strong class='text-theme-primary'>State :</strong>
+                    <span>{{user.state}}</span>
+                </li>
+                <li class='list-group-item'>
+                    <strong class='text-theme-primary'>City :</strong>
+                    <span>{{user.city}}</span>
+                </li>
+            </ul>
+            <div class='d-flex justify-content-end mt-4 mb-2 gap-3'>
+                <a
+                    type='button'
+                    href='/user/manage/{{user._id}}'
+                    class='btn btn-primary'
+                >Edit User Detail</a>
+            </div>
+        </div>
+    </div>
+</div>
